@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IoT Dashboard with Graph</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>IoT Dashboard</h1>
+    <div class="device-status">
+      <h2>Device Status</h2>
+      <p id="device-status-text">Offline</p>
+    </div>
+    <div class="sensor-data">
+      <h2>Sensor Data</h2>
+      <p>Temperature: <span id="temperature">N/A</span> °C</p>
+      <p>Humidity: <span id="humidity">N/A</span> %</p>
+    </div>
+    <div class="graph-container">
+      <h2>Graph: Sensor Data over Time</h2>
+      <canvas id="graph"></canvas>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
